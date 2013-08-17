@@ -1,19 +1,28 @@
-<legend>Results</legend>
-<table class="table">
-  <thead>
-    <tr>
-      <th>Item</th>
-      <th>Price</th>
-      <th>Vendor</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @items.each do |i| %>
-      <tr>
-        <td><%= i.name %></td>
-        <td><%= i.price%></td>
-        <td><%= i.vendor.name %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="container">
+  <div class"row">
+    <div class="span5">
+      <% unless @vendors.length == 0 %>
+        <legend>Restaurants</legend>
+        <% @vendors.each do |v| %>
+          <div class="well">
+            <legend><%= v.name %></legend>
+            <p>Rating: <%= v.rating %>/10</p>
+            <a class="btn btn-primary" href="/rate/index/?id=<%= v.id  %>">Rate</a>
+            <iframe width="300" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.za/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=+&amp;q=university+of+the+witwatersrand&amp;ie=UTF8&amp;hq=university+of+the+witwatersrand&amp;ll=-26.189775,28.031677&amp;spn=0.010821,0.01929&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=16492587111786934815&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.za/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=+&amp;q=university+of+the+witwatersrand&amp;ie=UTF8&amp;hq=university+of+the+witwatersrand&amp;ll=-26.189775,28.031677&amp;spn=0.010821,0.01929&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=16492587111786934815" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+          </div>
+        <% end %>
+      </div>
+      <% end %>
+      <% unless @items.length == 0 %>
+        <div class="span6">
+          <legend>Items</legend>
+          <% @items.each do |i| %>
+            <div class="well">
+              <legend><%= i.name %> from <%= i.vendor.name %></legend>
+              <h3><%= "Price: R" + i.price.to_s %></h3>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+</div>

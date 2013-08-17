@@ -3,4 +3,5 @@ class Vendor < ActiveRecord::Base
 
   has_many :items
   has_many :keywords
+  has_one :location
 end

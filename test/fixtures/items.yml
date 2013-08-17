@@ -9,3 +9,8 @@ two:
   name: Chicken Wrap
   price: 9.99
   vendor_id: 9999
+    
+two:
+  name: Chicken Wrap
+  price: 9.99
+  vendor_id: 9999

@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  keyword: MyString
-  vendor_id: 1
+  keyword: Vegetarian
+  vendor_id: 9999
 
 two:
-  keyword: MyString
-  vendor_id: 1
+  keyword: Halaal
+  vendor_id: 1234
+  
+three:
+  keyword: Healthy
+  vendor_id: 1234

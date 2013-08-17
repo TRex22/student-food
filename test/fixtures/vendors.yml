@@ -1,9 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  name: Burger Restaurant McCreative Name
+  name: Paul's Healthy Foods
   id: 1234
+  rating: 6
 
 two:
-  name: Some Other
+  name: Jonah and The Whale Meat
   id: 9999
+  rating: 7
+  
+two:
+  name: Jason's Bakery
+  id: 1111
+  rating: 7
