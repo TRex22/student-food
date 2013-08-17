@@ -1,5 +1,6 @@
 Studentfood::Application.routes.draw do
   get "rate/index"
+  get "rate/rate"
 
   get "search/find"
 

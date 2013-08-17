@@ -1,15 +1,26 @@
-<form>
-  <select>  
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
-    <option>4</option>
-    <option>5</option>
-    <option>6</option>
-    <option>7</option>
-    <option>8</option>
-    <option>9</option>
-    <option>10</option>
-  </select>  
-  </input>
-</form>
+<legend>Rating <%= @vendor.name %></legend>
+<center>
+  <form action="/rate/rate">
+    <p class="lead">Out of 10, How would you rate this restaurant?</p>
+    <select name="rating">  
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+    </select>
+    </br>
+    <p class="lead">Comments? Criticism?</p>
+    <textarea rows="3"></textarea>
+    </br>
+    <input name="vendor_id" value=<%= @vendor.id %> style="visibility:hidden"></input>
+    </br>
+    <input class="btn btn-primary" type="submit">
+    </input>
+  </form>
+</center>

@@ -7,8 +7,13 @@
           <div class="well">
             <legend><%= v.name %></legend>
             <p>Rating: <%= v.rating %>/10</p>
+            <% (1..v.rating).each do |c| %>
+              ★
+            <% end %>
+            </br>
             <a class="btn btn-primary" href="/rate/index/?id=<%= v.id  %>">Rate</a>
-            <iframe width="300" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.za/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=+&amp;q=university+of+the+witwatersrand&amp;ie=UTF8&amp;hq=university+of+the+witwatersrand&amp;ll=-26.189775,28.031677&amp;spn=0.010821,0.01929&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=16492587111786934815&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.za/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=+&amp;q=university+of+the+witwatersrand&amp;ie=UTF8&amp;hq=university+of+the+witwatersrand&amp;ll=-26.189775,28.031677&amp;spn=0.010821,0.01929&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=16492587111786934815" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+            </br>
+            <iframe width="300" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.za/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=university+of+the+witwatersrand+the+matrix&amp;aq=&amp;sll=-26.189789,28.030549&amp;sspn=0.002705,0.004823&amp;ie=UTF8&amp;hq=university+of+the+witwatersrand+the+matrix&amp;ll=-26.190007,28.030738&amp;spn=0.020025,0.032015&amp;t=m&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.za/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=university+of+the+witwatersrand+the+matrix&amp;aq=&amp;sll=-26.189789,28.030549&amp;sspn=0.002705,0.004823&amp;ie=UTF8&amp;hq=university+of+the+witwatersrand+the+matrix&amp;ll=-26.190007,28.030738&amp;spn=0.020025,0.032015&amp;t=m" style="color:#0000FF;text-align:left">View Larger Map</a></small>
           </div>
         <% end %>
       </div>

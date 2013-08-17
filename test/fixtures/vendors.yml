@@ -4,13 +4,19 @@ one:
   name: Paul's Healthy Foods
   id: 1234
   rating: 6
+  rating_sum: 6
+  rating_count: 1 
 
 two:
   name: Jonah and The Whale Meat
   id: 9999
   rating: 7
+  rating_count: 1 
+  rating_sum: 7
   
-two:
+three:
   name: Jason's Bakery
   id: 1111
   rating: 7
+  rating_count: 1 
+  rating_sum: 7
