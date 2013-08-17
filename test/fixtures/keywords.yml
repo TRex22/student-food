@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  name: Burger Restaurant McCreative Name
-  id: 1234
+  keyword: MyString
+  vendor_id: 1
 
 two:
-  name: Some Other
-  id: 9999
+  keyword: MyString
+  vendor_id: 1

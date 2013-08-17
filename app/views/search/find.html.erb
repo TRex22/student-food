@@ -1,0 +1,19 @@
+<legend>Results</legend>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+      <th>Vendor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @items.each do |i| %>
+      <tr>
+        <td><%= i.name %></td>
+        <td><%= i.price%></td>
+        <td><%= i.vendor.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

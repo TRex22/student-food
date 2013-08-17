@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  name: MyString
+  name: Burger
   price: 9.99
+  vendor_id: 1234
 
 two:
-  name: MyString
+  name: Chicken Wrap
   price: 9.99
+  vendor_id: 9999
